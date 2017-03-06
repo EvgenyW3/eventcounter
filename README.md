@@ -4,7 +4,7 @@
 * counter-cut.html is small version without styling and uses a different script
 
 * both html files contain logic scripts inside <script> tag
-* counter.js contains main's counter logic separatly
+* counter.js contains mains counter logic separatly
 
 ## Drupal integration using block
 
