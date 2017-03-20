@@ -46,10 +46,13 @@
         /*
         Width needs to be 180px on partner seminar page
         */
-        width: 210px;
+        width: 180px;
     }
     #clockdiv > div {
         margin-top: 5px;
+    }
+    .content {
+        text-align: center;
     }
 }
 </style>
@@ -102,7 +105,7 @@ function initializeClock(id, endtime) {
   function updateClock() {
     var t = getTimeRemaining(endtime);
 
-    daysSpan.innerHTML = t.days;
+    daysSpan.innerHTML = ('0' + t.days).slice(-2);
     hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
     minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
     secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
