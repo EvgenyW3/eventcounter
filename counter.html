@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Document</title>
 </head>
 <style type="text/css">
@@ -38,6 +39,18 @@
     border-bottom: 1px solid white;
     position: relative;
     top: -66px;
+}
+
+@media screen and (max-width: 425px) {
+    #clockdiv {
+        /*
+        Width needs to be 180px on partner seminar page
+        */
+        width: 210px;
+    }
+    #clockdiv > div {
+        margin-top: 5px;
+    }
 }
 </style>
 <body>
